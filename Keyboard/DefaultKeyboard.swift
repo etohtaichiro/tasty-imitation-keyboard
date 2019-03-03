@@ -8,23 +8,23 @@
 
 func defaultKeyboard() -> Keyboard {
     let defaultKeyboard = Keyboard()
-    
-    for key in ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"] {
+
+    for key in ["k", "ŋ", "c", "y", "d", "t", "n", "b", "p", "f"] {
         let keyModel = Key(.character)
         keyModel.setLetter(key)
         defaultKeyboard.add(key: keyModel, row: 0, page: 0)
     }
-    
-    for key in ["A", "S", "D", "F", "G", "H", "J", "K", "L"] {
+
+    for key in ["m", "r", "l", "w", "s", "h", "◌́", "◌̀", "◌̂", "◌̌"] {
         let keyModel = Key(.character)
         keyModel.setLetter(key)
         defaultKeyboard.add(key: keyModel, row: 1, page: 0)
     }
     
-    let keyModel = Key(.shift)
-    defaultKeyboard.add(key: keyModel, row: 2, page: 0)
+    //let keyModel = Key(.shift)
+    //defaultKeyboard.add(key: keyModel, row: 2, page: 0)
     
-    for key in ["Z", "X", "C", "V", "B", "N", "M"] {
+    for key in ["a", "i", "u", "ʉ", "ə", "e", "ɛ", "o", "ɔ"] {
         let keyModel = Key(.character)
         keyModel.setLetter(key)
         defaultKeyboard.add(key: keyModel, row: 2, page: 0)
@@ -41,8 +41,8 @@ func defaultKeyboard() -> Keyboard {
     let keyboardChange = Key(.keyboardChange)
     defaultKeyboard.add(key: keyboardChange, row: 3, page: 0)
     
-    let settings = Key(.settings)
-    defaultKeyboard.add(key: settings, row: 3, page: 0)
+    //let settings = Key(.settings)
+    //defaultKeyboard.add(key: settings, row: 3, page: 0)
     
     let space = Key(.space)
     space.uppercaseKeyCap = "space"
@@ -88,7 +88,7 @@ func defaultKeyboard() -> Keyboard {
     
     defaultKeyboard.add(key: Key(keyboardChange), row: 3, page: 1)
     
-    defaultKeyboard.add(key: Key(settings), row: 3, page: 1)
+    //defaultKeyboard.add(key: Key(settings), row: 3, page: 1)
     
     defaultKeyboard.add(key: Key(space), row: 3, page: 1)
     
@@ -120,7 +120,7 @@ func defaultKeyboard() -> Keyboard {
     
     defaultKeyboard.add(key: Key(keyboardChange), row: 3, page: 2)
     
-    defaultKeyboard.add(key: Key(settings), row: 3, page: 2)
+    //defaultKeyboard.add(key: Key(settings), row: 3, page: 2)
     
     defaultKeyboard.add(key: Key(space), row: 3, page: 2)
     

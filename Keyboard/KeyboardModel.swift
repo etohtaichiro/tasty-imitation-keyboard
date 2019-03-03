@@ -139,7 +139,7 @@ class Key: Hashable {
     
     func setLetter(_ letter: String) {
         self.lowercaseOutput = letter.lowercased()
-        self.uppercaseOutput = letter.uppercased()
+        self.uppercaseOutput = letter.lowercased()
         self.lowercaseKeyCap = self.lowercaseOutput
         self.uppercaseKeyCap = self.uppercaseOutput
     }
